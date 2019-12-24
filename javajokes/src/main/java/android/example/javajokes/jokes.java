@@ -6,12 +6,12 @@ import java.util.Random;
 import static java.util.Arrays.asList;
 
 public class jokes {
-    List<String> list=asList("joke 1",
+  private static List<String> list=asList("joke 1",
             "joke2",
             "joke 3",
             "joke 4");
 
-    public String getJoke() {
+    public static String getJoke() {
 
         Random random=new Random(  );
         String joke=list.get(random.nextInt(list.size())  );
