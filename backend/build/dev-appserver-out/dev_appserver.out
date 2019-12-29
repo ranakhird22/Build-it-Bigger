@@ -1,0 +1,30 @@
+??? 29, 2019 10:53:28 ? com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\user\Videos\udacity android project\ud867-master\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+2019-12-29 22:53:29.152:INFO::main: Logging initialized @1099ms to org.eclipse.jetty.util.log.StdErrLog
+2019-12-29 22:53:29.260:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+java.io.IOException: Failed to bind to localhost/127.0.0.1:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:346)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:308)
+	at com.google.appengine.tools.development.jetty9.JettyContainerService.connectContainer(JettyContainerService.java:309)
+	at com.google.appengine.tools.development.AbstractContainerService.createConnection(AbstractContainerService.java:268)
+	at com.google.appengine.tools.development.AbstractInstanceHolder.createConnection(AbstractInstanceHolder.java:37)
+	at com.google.appengine.tools.development.AbstractModule.createConnection(AbstractModule.java:73)
+	at com.google.appengine.tools.development.Modules.createConnections(Modules.java:99)
+	at com.google.appengine.tools.development.DevAppServerImpl.doStart(DevAppServerImpl.java:242)
+	at com.google.appengine.tools.development.DevAppServerImpl.access$000(DevAppServerImpl.java:44)
+	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:220)
+	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:218)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.google.appengine.tools.development.DevAppServerImpl.start(DevAppServerImpl.java:218)
+	at com.google.appengine.tools.development.DevAppServerMain$StartAction.apply(DevAppServerMain.java:404)
+	at com.google.appengine.tools.util.Parser$ParseResult.applyArgs(Parser.java:45)
+	at com.google.appengine.tools.development.DevAppServerMain.run(DevAppServerMain.java:257)
+	at com.google.appengine.tools.development.DevAppServerMain.main(DevAppServerMain.java:248)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:342)
+	... 16 more

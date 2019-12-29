@@ -13,6 +13,11 @@ buildscript {
 android {
     compileSdkVersion 28
     buildToolsVersion "28.0.0"
+    flavorDimensions "default"
+   /* dexOptions {
+        preDexLibraries = false
+    }*/
+
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
@@ -31,6 +36,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors{
+        free {
+            applicationId "com.udacity.gradle.builditbigger.free"
+            //applicationId "com.example.jokeapp.free"
+          //  versionCode 1
+           // versionName "1.0"
+        }
+        paid {
+           applicationId "com.udacity.gradle.builditbigger.paid"
+           // applicationId"com.example.jokeapp.paid"
+          //  versionCode 1
+          // versionName "1.0"
+        }
+    }
 }
 
 dependencies {
@@ -38,7 +58,8 @@ dependencies {
     endpointsServer project(path: ':backend', configuration: 'endpoints')
    // implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.gms:play-services-ads:11.8.0'
+
+    freeImplementation 'com.google.android.gms:play-services-ads:11.8.0'
 
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
@@ -46,8 +67,13 @@ dependencies {
     implementation 'com.google.code.findbugs:jsr305:3.0.1'
     implementation  project(':javajokes')
     implementation  project(':androidlib')
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
+     exclude group: 'com.android.support', module: 'support-annotations'
     })
 
     testImplementation 'junit:junit:4.12'
