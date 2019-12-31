@@ -60,8 +60,7 @@ public class MainActivityFragment extends Fragment {
             Intent intent = new Intent(context, android.example.androidlib.MainJoke.class);
 
             intent.putExtra("jokes", loadedJoke);
-            //Toast.makeText(context, loadedJoke, Toast.LENGTH_LONG).show();
-            //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
             context.startActivity(intent);
 
             progressBar.setVisibility(View.GONE);}

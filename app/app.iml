@@ -19,8 +19,8 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/paid/res;file://$MODULE_DIR$/build/generated/res/rs/paid/debug;file://$MODULE_DIR$/build/generated/res/resValues/paid/debug" />
-        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/build/generated/res/rs/androidTest/paid/debug;file://$MODULE_DIR$/build/generated/res/resValues/androidTest/paid/debug" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/paid/res" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
@@ -204,25 +204,6 @@
     <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar" level="project" />
-    <orderEntry type="module" module-name="androidlib" />
-    <orderEntry type="module" module-name="javajokes" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:25.2.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-lite:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-gass:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-license:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-lite-license:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-v4:25.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement-license:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-gass-license:11.8.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-fragment:25.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:25.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:25.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:25.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-compat:25.2.0@aar" level="project" />
-    <orderEntry type="module" module-name="androidlib" />
-    <orderEntry type="module" module-name="javajokes" />
     <orderEntry type="module" module-name="androidlib" />
     <orderEntry type="module" module-name="javajokes" />
   </component>

@@ -16,12 +16,12 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 
 import java.io.IOException;
 
-//public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
+
 public class EndpointsAsyncTask extends AsyncTask<com.udacity.gradle.builditbigger.MainActivityFragment, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
     private com.udacity.gradle.builditbigger.MainActivityFragment mainActivityFragment;
-   // com.udacity.gradle.builditbigger.MainActivityFragment... params
+
     @Override
     protected String doInBackground(com.udacity.gradle.builditbigger.MainActivityFragment... params) {
         mainActivityFragment = params[0];
@@ -45,14 +45,12 @@ public class EndpointsAsyncTask extends AsyncTask<com.udacity.gradle.builditbigg
             myApiService = builder.build();
         }
 
-       //context = params[0];
 
-       // String name = params[0].second;
 
         try {
-         // return myApiService.sayHi(name).execute().getData();
+
           return myApiService.getJoke().execute().getData();
-           // return myApiService.getJoke().execute().getData();
+
         } catch (IOException e) {
             return e.getMessage();
         }
@@ -64,27 +62,5 @@ public class EndpointsAsyncTask extends AsyncTask<com.udacity.gradle.builditbigg
         mainActivityFragment.launchDisplayJokeActivity();
 
 
-     /*   if (result!=null) {
-           // Toast.makeText( context, result, Toast.LENGTH_LONG ).show();
-            /*Intent intent = new Intent(context,android.example.androidlib.MainJoke.class);
-            intent.putExtra("JOKE",result);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-             context.startActivity(intent);*/
-
-
-            //Intent intent1=new Intent( getApplicationContext(), ReviewActivity.class );
-            //intent1.putExtra("id",id );
-            //intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-           // startActivity(intent1);*/
-
-       /* } else{
-
-            Toast.makeText(context,  "no joke ", Toast.LENGTH_LONG).show();
-        }*/
-
-       // Intent intent = new Intent(context, .class);
-        // Put the string in the envelope
-       // intent.putExtra(DisplayJokeActivity.JOKE_KEY,result);
-        //context.startActivity(intent);
     }
 }
